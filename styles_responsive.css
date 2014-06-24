@@ -1,0 +1,157 @@
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  /* Styles */ }
+html {
+  font: normal 100% Arial, Helvetica, sans-serif;
+  color: #000;
+  height: 100%; }
+
+body {
+  -webkit-text-size-adjust: 100%;
+  text-align: center;
+  background: #D3D3D3;
+  margin: 0;
+  background: #ebe9f7;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlYmU5ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYWRhZGQzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #ebe9f7 0%, #adadd3 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ebe9f7), color-stop(100%, #adadd3));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ebe9f7 0%, #adadd3 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ebe9f7 0%, #adadd3 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ebe9f7 0%, #adadd3 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ebe9f7 0%, #adadd3 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f7', endColorstr='#adadd3',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */ }
+
+body a:link, body a:visited, body a:active {
+  font: bold 15px Arial, Helvetica, sans-serif;
+  color: #000;
+  text-decoration: none; }
+
+body a:hover {
+  text-decoration: underline; }
+
+P {
+  font: 0.85em/1.3em Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 1px solid #ccc;
+  margin: 0; }
+
+h1 {
+  font: bold 17px Arial, Helvetica, sans-serif;
+  margin: 0; }
+
+h1.heading {
+  font: bold 15px Arial, Helvetica, sans-serif;
+  padding: 14px 0 0 0;
+  margin: 24px 14px 0 14px;
+  text-align: left;
+  border-bottom: 1px solid black; }
+
+#content {
+  position: relative;
+  background: url(MD_logo.png) no-repeat 50% 20%;
+  background-size: 50% auto;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  /* iPads (landscape) ----------- */
+  /* iPads (portrait) ----------- */
+  /* iphone (landscape) ----------- */
+  /* iphone (portrait) ----------- */ }
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape) {
+    #content {
+      max-width: 1024px;
+      background-size: 70% auto; } }
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait) {
+    #content {
+      max-width: 768px;
+      background-size: 70% auto; } }
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : landscape) {
+    #content {
+      max-width: 568px; } }
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : portrait) {
+    #content {
+      max-width: 320px; } }
+  @media only screen and (max-width: 684px) {
+    #content {
+      background-size: 85% auto;
+      background-position: 50% 10%; } }
+
+#address {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  max-width: 1000px;
+  margin: 50px auto 0;
+  color: #111;
+  font-size: 1.5em;
+  /* iphone (landscape) ----------- */ }
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : landscape) {
+    #address {
+      top: 21%; } }
+  @media only screen and (max-width: 684px) {
+    #address {
+      top: 22%; } }
+  #address #phone {
+    max-width: 1000px;
+    margin: .5em auto 1em;
+    color: #111;
+    font-size: 1em; }
+  #address #dropoff {
+    margin: 0 12px;
+    color: #333;
+    font-size: .7em; }
+    #address #dropoff .address {
+      color: #4h4h4h; }
+    #address #dropoff span {
+      margin: .5em 0; }
+    #address #dropoff > span {
+      display: inline-block;
+      margin-top: 1em; }
+    @media only screen and (max-width: 684px) {
+      #address #dropoff span {
+        font-size: .8em; } }
