@@ -85,13 +85,51 @@ h1 {
 
 #content {
   position: relative;
-  background: url(mdsharplogo.png) no-repeat 50% 20%;
-  background-size: 100% auto;
+  background: url(../MD_logo.png) no-repeat 50% 20%;
+  background-size: 50% auto;
   height: 100vh;
   width: 100vw;
-  max-width: 800px;
   margin: 0 auto;
   text-align: center;
+
+  /* iPads (landscape) ----------- */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape) {
+    max-width: 1024px;
+    background-size: 70% auto;
+  }
+
+  /* iPads (portrait) ----------- */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait) {
+    max-width: 768px;
+    background-size: 70% auto;
+  }
+
+  /* iphone (landscape) ----------- */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : landscape) {
+    max-width: 568px;
+  }
+
+  /* iphone (portrait) ----------- */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : portrait) {
+    max-width: 320px;
+  }
+  @media only screen and (max-width: 684px) {
+    background-size: 85% auto;
+    background-position: 50% 10%;
+  }
+
 }
 #address {
   position: absolute;
@@ -102,6 +140,17 @@ h1 {
   margin: 50px auto 0;
   color: #111;
   font-size: 1.5em;
+  /* iphone (landscape) ----------- */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : landscape) {
+    top: 21%;
+  }
+  @media only screen and (max-width: 684px) {
+    top: 22%;
+  }
+
   #phone {
     max-width: 1000px;
     margin: .5em auto 1em;
@@ -110,20 +159,23 @@ h1 {
   }
   #dropoff {
     margin: 0 12px;
-    h1 {
-      color: #333;
-      font-size: .8em;
-    }
+    color: #333;
+    font-size: .7em;
     .address {
       color: #4h4h4h;
     }
     span {
       margin: .5em 0;
-      font-size: .7em;
     }
     > span {
       display: inline-block;
       margin-top: 1em;
+    }
+    @media only screen and (max-width: 684px) {
+      span {
+        font-size: .8em;
+      }
+
     }
   }
 }

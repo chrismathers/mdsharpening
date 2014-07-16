@@ -76,46 +76,13 @@ h1.heading {
 
 #content {
   position: relative;
-  background: url(MD_logo.png) no-repeat 50% 20%;
-  background-size: 50% auto;
+  background: url(../mdsharplogo.png) no-repeat 50% 20%;
+  background-size: 100% auto;
   height: 100vh;
   width: 100vw;
+  max-width: 800px;
   margin: 0 auto;
-  text-align: center;
-  /* iPads (landscape) ----------- */
-  /* iPads (portrait) ----------- */
-  /* iphone (landscape) ----------- */
-  /* iphone (portrait) ----------- */ }
-  @media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (orientation : landscape) {
-    #content {
-      max-width: 1024px;
-      background-size: 70% auto; } }
-  @media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (orientation : portrait) {
-    #content {
-      max-width: 768px;
-      background-size: 70% auto; } }
-  @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 568px)
-  and (orientation : landscape) {
-    #content {
-      max-width: 568px; } }
-  @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 568px)
-  and (orientation : portrait) {
-    #content {
-      max-width: 320px; } }
-  @media only screen and (max-width: 684px) {
-    #content {
-      background-size: 85% auto;
-      background-position: 50% 10%; } }
+  text-align: center; }
 
 #address {
   position: absolute;
@@ -125,33 +92,22 @@ h1.heading {
   max-width: 1000px;
   margin: 50px auto 0;
   color: #111;
-  font-size: 1.5em;
-  /* iphone (landscape) ----------- */ }
-  @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 568px)
-  and (orientation : landscape) {
-    #address {
-      top: 21%; } }
-  @media only screen and (max-width: 684px) {
-    #address {
-      top: 22%; } }
+  font-size: 1.5em; }
   #address #phone {
     max-width: 1000px;
     margin: .5em auto 1em;
     color: #111;
     font-size: 1em; }
   #address #dropoff {
-    margin: 0 12px;
-    color: #333;
-    font-size: .7em; }
+    margin: 0 12px; }
+    #address #dropoff h1 {
+      color: #333;
+      font-size: .8em; }
     #address #dropoff .address {
       color: #4h4h4h; }
     #address #dropoff span {
-      margin: .5em 0; }
+      margin: .5em 0;
+      font-size: .7em; }
     #address #dropoff > span {
       display: inline-block;
       margin-top: 1em; }
-    @media only screen and (max-width: 684px) {
-      #address #dropoff span {
-        font-size: .8em; } }
