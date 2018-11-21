@@ -64,7 +64,12 @@ img {
   margin: 0; }
 
 h1 {
-  font: bold 17px Arial, Helvetica, sans-serif;
+  font: bold 22px Arial, Helvetica, sans-serif;
+  margin: 0 0 1em 0;
+  display: inline-block; }
+
+h2 {
+  font: bold 15px Arial, Helvetica, sans-serif;
   margin: 0; }
 
 h1.heading {
@@ -74,10 +79,24 @@ h1.heading {
   text-align: left;
   border-bottom: 1px solid black; }
 
+ul.left,
+ul.right {
+  width: 39%;
+  text-align: left;
+  float: left; }
+  ul.left li,
+  ul.right li {
+    font-size: .7em;
+    white-space: nowrap;
+    color: #555; }
+
+ul.left {
+  margin-left: 10%; }
+
 #content {
   position: relative;
-  background: url(../mdsharplogo.png) no-repeat 50% 20%;
-  background-size: 100% auto;
+  background: url(../mdsharplogo.png) no-repeat 50% 16%;
+  background-size: 90% auto;
   height: 100vh;
   width: 100vw;
   max-width: 800px;
@@ -86,11 +105,11 @@ h1.heading {
 
 #address {
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 0;
   right: 0;
   max-width: 1000px;
-  margin: 50px auto 0;
+  margin: 107px auto 0;
   color: #111;
   font-size: 1.5em; }
   #address #phone {
@@ -104,10 +123,33 @@ h1.heading {
       color: #333;
       font-size: .8em; }
     #address #dropoff .address {
-      color: #4h4h4h; }
+      color: #2c61fa; }
+    #address #dropoff .and {
+      margin: 0;
+      font-size: 0.6em; }
     #address #dropoff span {
-      margin: .5em 0;
+      margin: 0;
       font-size: .7em; }
     #address #dropoff > span {
       display: inline-block;
-      margin-top: 1em; }
+      margin-top: .5em; }
+    #address #dropoff .desc {
+      margin-top: 1.1em;
+      color: #555; }
+      #address #dropoff .desc li {
+        color: #555; }
+    #address #dropoff .list-1 {
+      margin: 0; }
+      #address #dropoff .list-1 li {
+        display: inline-block;
+        font-size: 12px;
+        list-style: disc; }
+  #address #footer {
+    font-size: 11px;
+    margin: 100px 0;
+    color: #adadd3;
+    width: 100%; }
+    #address #footer span.right {
+      text-align: right;
+      color: #333;
+      float: right; }
